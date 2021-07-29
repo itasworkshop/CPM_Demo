@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane layoutX="338.0" layoutY="14.0" prefHeight="386.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/16"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="gui.TaskCPMController">
+    <children>
+        <Label layoutX="86.0" layoutY="16.0" prefHeight="21.0" prefWidth="243.0"
+               text="CPM Result for Given Project Are:-"/>
+        <Label layoutX="18.0" layoutY="50.0" text="1. Critical path length (cost): 9"/>
+        <Label layoutX="18.0" layoutY="75.0" text="2. Initial nodes: Start"/>
+        <TableView fx:id="cpmTable" layoutX="7.0" layoutY="108.0" prefHeight="257.0" prefWidth="412.0">
+            <columns>
+                <TableColumn fx:id="cpmtaskCol" prefWidth="82.0" text="Task"/>
+                <TableColumn fx:id="esCol" prefWidth="37.0" text="ES"/>
+                <TableColumn fx:id="efCol" prefWidth="37.0" text="EF"/>
+                <TableColumn fx:id="lsCol" prefWidth="38.0" text="LS"/>
+                <TableColumn fx:id="lfCol" prefWidth="43.0" text="LF"/>
+                <TableColumn fx:id="slackCol" prefWidth="83.0" text="Slack"/>
+                <TableColumn fx:id="criticalCol" minWidth="0.0" prefWidth="87.0" text="Critical"/>
+            </columns>
+        </TableView>
+    </children>
+</Pane>

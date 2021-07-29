@@ -1,0 +1,17 @@
+Step by step
+
+1. Get java 11
+java -version
+
+2. Download https://gluonhq.com/download/javafx-11-0-2-sdk-linux/
+
+3. Unzip and set up envrionment variables
+export PATH_TO_FX=/home/praveen/softwares/openjfx-11.0.2_linux-x64_bin-sdk/javafx-sdk-11.0.2/lib
+
+4. Compile HelloFX.java
+javac --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX.java
+
+5. Get HelloFX run
+java --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX
+
+--module-path /home/praveen/softwares/openjfx-11.0.2_linux-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml -javaagent:openjpa-all-3.2.0.jar
