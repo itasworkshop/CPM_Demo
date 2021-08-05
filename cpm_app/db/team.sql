@@ -4,5 +4,5 @@ CREATE TABLE TEAM (
   , NAME VARCHAR2(5)
   , PID NUMBER
   , PRIMARY KEY (ID)
-  , foreign key (PID) references PROJECT(PID)
+
 );

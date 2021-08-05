@@ -24,4 +24,15 @@
             <property name="javax.persistence.jdbc.password" value=""/>
         </properties>
     </persistence-unit>
+    <persistence-unit name="unit3" transaction-type="RESOURCE_LOCAL">
+        <provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+        <class>entity.Teams</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:h2:file:./db/test.db;INIT=RUNSCRIPT FROM 'db/team.sql'\;RUNSCRIPT FROM 'db/teaminit.sql'"/>
+            <property name="javax.persistence.jdbc.user" value=""/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+        </properties>
+    </persistence-unit>
 </persistence>
